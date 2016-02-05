@@ -1,0 +1,7 @@
+0.1.0:
+    - Initialize plugin.
+    - create_categories_table.php
+    - create_subscribers_table.php
+    - create_category_subdcriber_table.php
+    - create_mailings_table.php
+    - seed_categories_table.php

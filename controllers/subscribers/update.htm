@@ -1,0 +1,28 @@
+<?php Block::put('breadcrumb') ?>
+<ul>
+    <li><a href="<?= Backend::url('lovata/subscriptions/subscribers') ?>"><?= e(trans('lovata.subscriptions::lang.sub_menu.subscribers')) ?></a></li>
+    <li><?= e(trans($this->pageTitle)) ?></li>
+</ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+<div class="layout">
+    <?= Form::open([
+            'class' => 'layout',
+    'data-change-monitor' => 'true',
+    'data-window-close-confirm' => e(trans('lovata.subscriptions::lang.message.close_confirm')),
+    'id' => 'post-form'
+    ]) ?>
+
+    <?= $this->formRender() ?>
+
+    <?= Form::close() ?>
+</div>
+
+<?php else: ?>
+<div class="padded-container">
+    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
+    <p><a href="<?= Backend::url('lovata/subscriptions/subscribers') ?>" class="btn btn-default"><?= e(trans('lovata.subscriptions::lang.message.return_to_subscriptions')) ?></a></p>
+</div>
+<?php endif ?>

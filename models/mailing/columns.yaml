@@ -1,0 +1,10 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    mailsend_title:
+        label: lovata.subscriptions::lang.field.mailsend_title
+        searchable: true
+    created_at:
+        label: Created_at

@@ -1,0 +1,32 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/lovata/subscriptions/models/category/fields.yaml
+
+# Model Class name
+modelClass: Lovata\Subscriptions\Models\Category
+
+# Default redirect location
+defaultRedirect: lovata/subscriptions/categories
+
+# Create page
+create:
+    title: Create Category
+    redirect: lovata/subscriptions/categories/update/:id
+    redirectClose: lovata/subscriptions/categories
+    form: $/lovata/subscriptions/models/category/fields_on_create.yaml
+
+# Update page
+update:
+    title: Edit Category
+    redirect: lovata/subscriptions/categories
+    redirectClose: lovata/subscriptions/categories
+
+# Preview page
+preview:
+    title: Preview Category
