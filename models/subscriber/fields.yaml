@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    toolbar:
+        type: partial
+        path: post_toolbar
+tabs:
+    fields:
+        email:
+            label: lovata.subscriptions::lang.field.email
+            tab: lovata.subscriptions::lang.tab.edit
+            type: text
+            span: left
+            required: true
+        categories:
+            label: lovata.subscriptions::lang.field.categories
+            type: partial
+            span: left
+            tab: lovata.subscriptions::lang.tab.categories
+            path: ~/plugins/lovata/subscriptions/controllers/subscribers/_categories.htm

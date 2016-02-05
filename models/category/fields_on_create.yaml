@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    toolbar:
+        type: partial
+        path: post_toolbar
+tabs:
+    fields:
+        title:
+            label: lovata.subscriptions::lang.field.title
+            type: text
+            span: left
+            required: true
+        slug:
+            label: lovata.subscriptions::lang.field.slug
+            type: text
+            span: right
+            preset:
+                field: title
+                type: slug
+            required: true

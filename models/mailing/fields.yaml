@@ -1,0 +1,62 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    toolbar:
+        type: partial
+        path: post_toolbar
+tabs:
+    fields:
+        data_source:
+            label: lovata.subscriptions::lang.field.data_source
+            tab: lovata.subscriptions::lang.tab.edit
+            type: dropdown
+            span: left
+            default: handprint
+            options:
+                handprint: Handprint
+                article: Article
+        mailsend_title:
+            label: lovata.subscriptions::lang.field.mailsend_title
+            tab: lovata.subscriptions::lang.tab.edit
+            span: right
+            type: text
+            required: true
+        title:
+            label: lovata.subscriptions::lang.field.title
+            tab: lovata.subscriptions::lang.tab.edit
+            span: left
+            type: text
+            dependsOn: data_source
+        link:
+            label: lovata.subscriptions::lang.field.link
+            tab: lovata.subscriptions::lang.tab.edit
+            span: right
+            type: text
+            dependsOn: data_source
+        preview:
+            label: lovata.subscriptions::lang.field.preview
+            tab: lovata.subscriptions::lang.tab.edit
+            size: large
+            type: richeditor
+            dependsOn: data_source
+        category:
+            label: lovata.subscriptions::lang.field.category
+            tab: lovata.subscriptions::lang.tab.edit
+            span: left
+            type: relation
+            nameFrom: title
+        template_code:
+            label: lovata.subscriptions::lang.field.template
+            tab: lovata.subscriptions::lang.tab.edit
+            span: right
+            type: dropdown
+            options: getSubscriptionTemplates
+        article_id:
+            label: lovata.subscriptions::lang.field.article
+            tab: lovata.subscriptions::lang.tab.edit
+            span: left
+            type: dropdown
+            dependsOn: data_source
+            options: articlesListStatuses

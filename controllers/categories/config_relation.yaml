@@ -1,0 +1,19 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+subscribers:
+    label: Subscribers
+    view:
+        list: $/lovata/subscriptions/models/subscriber/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        list: $/lovata/subscriptions/models/subscriber/columns.yaml
+mailings:
+    label: Mailings
+    manage:
+        form: $/lovata/webridge/models/mailing/relation_fields.yaml
+        list: $/lovata/webridge/models/mailing/columns.yaml
+    view:
+        list: $/lovata/webridge/models/mailing/columns.yaml
+        toolbarButtons: create|delete

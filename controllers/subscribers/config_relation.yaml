@@ -1,0 +1,11 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+categories:
+    label: Categories
+    view:
+        list: $/lovata/subscriptions/models/category/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        list: $/lovata/subscriptions/models/category/columns.yaml

@@ -1,0 +1,32 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Subscriber
+
+# Model Form Field configuration
+form: $/lovata/subscriptions/models/subscriber/fields.yaml
+
+# Model Class name
+modelClass: Lovata\Subscriptions\Models\Subscriber
+
+# Default redirect location
+defaultRedirect: lovata/subscriptions/subscribers
+
+# Create page
+create:
+    title: Create Subscriber
+    redirect: lovata/subscriptions/subscribers/update/:id
+    redirectClose: lovata/subscriptions/subscribers
+    form: $/lovata/subscriptions/models/subscriber/fields_on_create.yaml
+
+# Update page
+update:
+    title: Edit Subscriber
+    redirect: lovata/subscriptions/subscribers
+    redirectClose: lovata/subscriptions/subscribers
+
+# Preview page
+preview:
+    title: Preview Subscriber

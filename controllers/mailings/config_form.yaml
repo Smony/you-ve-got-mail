@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Mailing
+
+# Model Form Field configuration
+form: $/lovata/subscriptions/models/mailing/fields.yaml
+
+# Model Class name
+modelClass: Lovata\Subscriptions\Models\Mailing
+
+# Default redirect location
+defaultRedirect: lovata/subscriptions/mailings
+
+# Create page
+create:
+    title: Create Mailing
+    redirect: lovata/subscriptions/mailings/update/:id
+    redirectClose: lovata/subscriptions/mailings
+
+# Update page
+update:
+    title: Edit Mailing
+    redirect: lovata/subscriptions/mailings
+    redirectClose: lovata/subscriptions/mailings
+
+# Preview page
+preview:
+    title: Preview Mailing
